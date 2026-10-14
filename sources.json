@@ -1,0 +1,26 @@
+[
+  {
+    "name": "openbiped/unitree_actuator_open_sdk",
+    "path": "references/unitree_actuator_open_sdk",
+    "url": "https://github.com/openbiped/unitree_actuator_open_sdk.git",
+    "commit": "76443343d2f4872fb9dbeda0f9c18b386d6b536b",
+    "license": "BSD-3-Clause",
+    "license_sha256": "dab9d8382a863110ba01d6329d576b70985c1734cc21508fe8d08ad84d4c4c75"
+  },
+  {
+    "name": "thomasfla/go2_motor_analysis",
+    "path": "references/go2_motor_analysis",
+    "url": "https://github.com/thomasfla/go2_motor_analysis.git",
+    "commit": "4e446688f96e96fa124b337d30c7fd18d2ce1c2a",
+    "license": "MIT",
+    "license_sha256": "362d3e8e42178c7115274bf0b1a6236dedf3fabd2808086691e45477e3bd0458"
+  },
+  {
+    "name": "unitreerobotics/unitree_actuator_sdk",
+    "path": "references/unitree_actuator_sdk",
+    "url": "https://github.com/unitreerobotics/unitree_actuator_sdk.git",
+    "commit": "5b79a42d81cd69adac1367db79efdb972a898fd1",
+    "license": "BSD-3-Clause",
+    "license_sha256": "84aac59fd3246e3ddc49d1387644e8fcf43b0def4f0b9fe687f372e90446df2d"
+  }
+]

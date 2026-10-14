@@ -1,0 +1,9 @@
+[submodule "references/unitree_actuator_open_sdk"]
+	path = references/unitree_actuator_open_sdk
+	url = https://github.com/openbiped/unitree_actuator_open_sdk.git
+[submodule "references/go2_motor_analysis"]
+	path = references/go2_motor_analysis
+	url = https://github.com/thomasfla/go2_motor_analysis.git
+[submodule "references/unitree_actuator_sdk"]
+	path = references/unitree_actuator_sdk
+	url = https://github.com/unitreerobotics/unitree_actuator_sdk.git
