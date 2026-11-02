@@ -1,0 +1,471 @@
+{
+  "hardware_io_performed": false,
+  "tests_run": 23,
+  "test_failures": 0,
+  "test_errors": 0,
+  "stock_crc": {
+    "normal_polynomial": "0x1021",
+    "reflected_polynomial": "0x8408",
+    "bit_order": "LSB first",
+    "initial": "0x2CBB",
+    "xor_out": "0x0000",
+    "coverage": "TX bytes 0..14; RX bytes 0..13",
+    "storage": "little endian",
+    "results": [
+      {
+        "fixture": "id0_mode0",
+        "direction": "tx",
+        "calculated": "0xC344",
+        "stored_little_endian": "0xC344",
+        "match": true,
+        "raw": {
+          "motor_id": 0,
+          "mode": 0,
+          "reserved_mode_bit": 0,
+          "crc_valid": true,
+          "profile": "stock",
+          "evidence": "CRC matches supplied captures; field meanings/scales are hypotheses",
+          "hex": "fe ee 00 00 00 00 00 00 00 00 00 00 00 00 00 44 c3",
+          "torque": 0,
+          "speed": 0,
+          "position": 0,
+          "kp": 0,
+          "kd": 0
+        }
+      },
+      {
+        "fixture": "id0_mode0",
+        "direction": "rx",
+        "calculated": "0x1E7F",
+        "stored_little_endian": "0x1E7F",
+        "match": true,
+        "raw": {
+          "motor_id": 0,
+          "mode": 0,
+          "reserved_mode_bit": 0,
+          "crc_valid": true,
+          "profile": "stock",
+          "evidence": "CRC matches supplied captures; field meanings/scales are hypotheses",
+          "hex": "fd ee 00 00 00 07 00 38 24 00 00 1c 00 6c 7f 1e",
+          "torque": 0,
+          "speed": 7,
+          "position": 9272,
+          "temperature": 28,
+          "auxiliary_raw": 27648,
+          "error_candidate": 0,
+          "auxiliary_bits_3_14": 3456,
+          "auxiliary_reserved_bit": 0,
+          "auxiliary_meaning": "unconfirmed; not identified as foot force",
+          "torque_source": "unconfirmed: measured vs current-derived vs other"
+        }
+      },
+      {
+        "fixture": "id1_mode0",
+        "direction": "tx",
+        "calculated": "0xC6E9",
+        "stored_little_endian": "0xC6E9",
+        "match": true,
+        "raw": {
+          "motor_id": 1,
+          "mode": 0,
+          "reserved_mode_bit": 0,
+          "crc_valid": true,
+          "profile": "stock",
+          "evidence": "CRC matches supplied captures; field meanings/scales are hypotheses",
+          "hex": "fe ee 01 00 00 00 00 00 00 00 00 00 00 00 00 e9 c6",
+          "torque": 0,
+          "speed": 0,
+          "position": 0,
+          "kp": 0,
+          "kd": 0
+        }
+      },
+      {
+        "fixture": "id1_mode0",
+        "direction": "rx",
+        "calculated": "0x5F49",
+        "stored_little_endian": "0x5F49",
+        "match": true,
+        "raw": {
+          "motor_id": 1,
+          "mode": 0,
+          "reserved_mode_bit": 0,
+          "crc_valid": true,
+          "profile": "stock",
+          "evidence": "CRC matches supplied captures; field meanings/scales are hypotheses",
+          "hex": "fd ee 01 00 00 01 00 35 c9 00 00 1c 00 72 49 5f",
+          "torque": 0,
+          "speed": 1,
+          "position": 51509,
+          "temperature": 28,
+          "auxiliary_raw": 29184,
+          "error_candidate": 0,
+          "auxiliary_bits_3_14": 3648,
+          "auxiliary_reserved_bit": 0,
+          "auxiliary_meaning": "unconfirmed; not identified as foot force",
+          "torque_source": "unconfirmed: measured vs current-derived vs other"
+        }
+      },
+      {
+        "fixture": "id2_mode0",
+        "direction": "tx",
+        "calculated": "0xC81E",
+        "stored_little_endian": "0xC81E",
+        "match": true,
+        "raw": {
+          "motor_id": 2,
+          "mode": 0,
+          "reserved_mode_bit": 0,
+          "crc_valid": true,
+          "profile": "stock",
+          "evidence": "CRC matches supplied captures; field meanings/scales are hypotheses",
+          "hex": "fe ee 02 00 00 00 00 00 00 00 00 00 00 00 00 1e c8",
+          "torque": 0,
+          "speed": 0,
+          "position": 0,
+          "kp": 0,
+          "kd": 0
+        }
+      },
+      {
+        "fixture": "id2_mode0",
+        "direction": "rx",
+        "calculated": "0x3D17",
+        "stored_little_endian": "0x3D17",
+        "match": true,
+        "raw": {
+          "motor_id": 2,
+          "mode": 0,
+          "reserved_mode_bit": 0,
+          "crc_valid": true,
+          "profile": "stock",
+          "evidence": "CRC matches supplied captures; field meanings/scales are hypotheses",
+          "hex": "fd ee 02 00 00 0a 00 42 41 00 00 1c 00 79 17 3d",
+          "torque": 0,
+          "speed": 10,
+          "position": 16706,
+          "temperature": 28,
+          "auxiliary_raw": 30976,
+          "error_candidate": 0,
+          "auxiliary_bits_3_14": 3872,
+          "auxiliary_reserved_bit": 0,
+          "auxiliary_meaning": "unconfirmed; not identified as foot force",
+          "torque_source": "unconfirmed: measured vs current-derived vs other"
+        }
+      },
+      {
+        "fixture": "id0_mode1",
+        "direction": "tx",
+        "calculated": "0x01F9",
+        "stored_little_endian": "0x01F9",
+        "match": true,
+        "raw": {
+          "motor_id": 0,
+          "mode": 1,
+          "reserved_mode_bit": 0,
+          "crc_valid": true,
+          "profile": "stock",
+          "evidence": "CRC matches supplied captures; field meanings/scales are hypotheses",
+          "hex": "fe ee 10 00 00 12 00 38 24 00 00 80 02 40 00 f9 01",
+          "torque": 0,
+          "speed": 18,
+          "position": 9272,
+          "kp": 640,
+          "kd": 64
+        }
+      },
+      {
+        "fixture": "id0_mode1",
+        "direction": "rx",
+        "calculated": "0x5C4B",
+        "stored_little_endian": "0x5C4B",
+        "match": true,
+        "raw": {
+          "motor_id": 0,
+          "mode": 1,
+          "reserved_mode_bit": 0,
+          "crc_valid": true,
+          "profile": "stock",
+          "evidence": "CRC matches supplied captures; field meanings/scales are hypotheses",
+          "hex": "fd ee 10 00 00 f8 ff 37 24 00 00 1c 00 6c 4b 5c",
+          "torque": 0,
+          "speed": -8,
+          "position": 9271,
+          "temperature": 28,
+          "auxiliary_raw": 27648,
+          "error_candidate": 0,
+          "auxiliary_bits_3_14": 3456,
+          "auxiliary_reserved_bit": 0,
+          "auxiliary_meaning": "unconfirmed; not identified as foot force",
+          "torque_source": "unconfirmed: measured vs current-derived vs other"
+        }
+      },
+      {
+        "fixture": "id0_changed",
+        "direction": "tx",
+        "calculated": "0x74AB",
+        "stored_little_endian": "0x74AB",
+        "match": true,
+        "raw": {
+          "motor_id": 0,
+          "mode": 1,
+          "reserved_mode_bit": 0,
+          "crc_valid": true,
+          "profile": "stock",
+          "evidence": "CRC matches supplied captures; field meanings/scales are hypotheses",
+          "hex": "fe ee 10 00 00 12 00 bc 27 00 00 80 02 40 00 ab 74",
+          "torque": 0,
+          "speed": 18,
+          "position": 10172,
+          "kp": 640,
+          "kd": 64
+        }
+      },
+      {
+        "fixture": "id0_changed",
+        "direction": "rx",
+        "calculated": "0xF7D6",
+        "stored_little_endian": "0xF7D6",
+        "match": true,
+        "raw": {
+          "motor_id": 0,
+          "mode": 1,
+          "reserved_mode_bit": 0,
+          "crc_valid": true,
+          "profile": "stock",
+          "evidence": "CRC matches supplied captures; field meanings/scales are hypotheses",
+          "hex": "fd ee 10 13 00 09 00 b5 24 00 00 1c 00 6c d6 f7",
+          "torque": 19,
+          "speed": 9,
+          "position": 9397,
+          "temperature": 28,
+          "auxiliary_raw": 27648,
+          "error_candidate": 0,
+          "auxiliary_bits_3_14": 3456,
+          "auxiliary_reserved_bit": 0,
+          "auxiliary_meaning": "unconfirmed; not identified as foot force",
+          "torque_source": "unconfirmed: measured vs current-derived vs other"
+        }
+      }
+    ]
+  },
+  "single_bit_mutations_checked": 1320,
+  "virtual_multi": {
+    "result": {
+      "trajectory_completed": true,
+      "termination": [
+        {
+          "motor_id": 0,
+          "acknowledged": true,
+          "reply": {
+            "motor_id": 0,
+            "mode": 0,
+            "position": 0.0,
+            "velocity": 0.0,
+            "torque": 0.0,
+            "temperature": 28,
+            "error": 0,
+            "raw": {
+              "motor_id": 0,
+              "mode": 0,
+              "reserved_mode_bit": 0,
+              "crc_valid": true,
+              "profile": "stock",
+              "evidence": "CRC matches supplied captures; field meanings/scales are hypotheses",
+              "hex": "fd ee 00 00 00 00 00 00 00 00 00 1c 00 00 9d c3",
+              "torque": 0,
+              "speed": 0,
+              "position": 0,
+              "temperature": 28,
+              "auxiliary_raw": 0,
+              "error_candidate": 0,
+              "auxiliary_bits_3_14": 0,
+              "auxiliary_reserved_bit": 0,
+              "auxiliary_meaning": "unconfirmed; not identified as foot force",
+              "torque_source": "unconfirmed: measured vs current-derived vs other"
+            },
+            "validation": {
+              "axis": "rotor",
+              "angle": "uncalibrated",
+              "angle_evidence": "",
+              "velocity": "development scale; stock unverified",
+              "torque": "development scale; stock unverified; source unconfirmed",
+              "gear_ratio": 6.33,
+              "gear_ratio_verified": false,
+              "profile_evidence": "CRC matches supplied captures; field meanings/scales are hypotheses",
+              "gains": "SDK rotor convention; stock gain response unverified"
+            },
+            "timestamp": 977.753946083
+          },
+          "mechanical_stop_proven": false
+        },
+        {
+          "motor_id": 1,
+          "acknowledged": true,
+          "reply": {
+            "motor_id": 1,
+            "mode": 0,
+            "position": 0.0,
+            "velocity": 0.0,
+            "torque": 0.0,
+            "temperature": 28,
+            "error": 0,
+            "raw": {
+              "motor_id": 1,
+              "mode": 0,
+              "reserved_mode_bit": 0,
+              "crc_valid": true,
+              "profile": "stock",
+              "evidence": "CRC matches supplied captures; field meanings/scales are hypotheses",
+              "hex": "fd ee 01 00 00 00 00 00 00 00 00 1c 00 00 c8 46",
+              "torque": 0,
+              "speed": 0,
+              "position": 0,
+              "temperature": 28,
+              "auxiliary_raw": 0,
+              "error_candidate": 0,
+              "auxiliary_bits_3_14": 0,
+              "auxiliary_reserved_bit": 0,
+              "auxiliary_meaning": "unconfirmed; not identified as foot force",
+              "torque_source": "unconfirmed: measured vs current-derived vs other"
+            },
+            "validation": {
+              "axis": "rotor",
+              "angle": "uncalibrated",
+              "angle_evidence": "",
+              "velocity": "development scale; stock unverified",
+              "torque": "development scale; stock unverified; source unconfirmed",
+              "gear_ratio": 6.33,
+              "gear_ratio_verified": false,
+              "profile_evidence": "CRC matches supplied captures; field meanings/scales are hypotheses",
+              "gains": "SDK rotor convention; stock gain response unverified"
+            },
+            "timestamp": 977.754073573
+          },
+          "mechanical_stop_proven": false
+        },
+        {
+          "motor_id": 2,
+          "acknowledged": true,
+          "reply": {
+            "motor_id": 2,
+            "mode": 0,
+            "position": 0.0,
+            "velocity": 0.0,
+            "torque": 0.0,
+            "temperature": 28,
+            "error": 0,
+            "raw": {
+              "motor_id": 2,
+              "mode": 0,
+              "reserved_mode_bit": 0,
+              "crc_valid": true,
+              "profile": "stock",
+              "evidence": "CRC matches supplied captures; field meanings/scales are hypotheses",
+              "hex": "fd ee 02 00 00 00 00 00 00 00 00 1c 00 00 26 c1",
+              "torque": 0,
+              "speed": 0,
+              "position": 0,
+              "temperature": 28,
+              "auxiliary_raw": 0,
+              "error_candidate": 0,
+              "auxiliary_bits_3_14": 0,
+              "auxiliary_reserved_bit": 0,
+              "auxiliary_meaning": "unconfirmed; not identified as foot force",
+              "torque_source": "unconfirmed: measured vs current-derived vs other"
+            },
+            "validation": {
+              "axis": "rotor",
+              "angle": "uncalibrated",
+              "angle_evidence": "",
+              "velocity": "development scale; stock unverified",
+              "torque": "development scale; stock unverified; source unconfirmed",
+              "gear_ratio": 6.33,
+              "gear_ratio_verified": false,
+              "profile_evidence": "CRC matches supplied captures; field meanings/scales are hypotheses",
+              "gains": "SDK rotor convention; stock gain response unverified"
+            },
+            "timestamp": 977.75418595
+          },
+          "mechanical_stop_proven": false
+        }
+      ],
+      "mechanical_stop_proven": false
+    },
+    "timing": {
+      "0": {
+        "update_interval_s": {
+          "count": 5,
+          "mean": 0.012321835599982478,
+          "stddev": 0.009530098962633984,
+          "min": 0.00048392899998361827,
+          "max": 0.020205017999956
+        },
+        "motion_update_interval_s": {
+          "count": 3,
+          "mean": 0.020102497666660685,
+          "stddev": 7.734012799621285e-05,
+          "min": 0.020018230999994557,
+          "max": 0.020205017999956
+        },
+        "latency_s": {
+          "count": 6,
+          "mean": 5.788249999720089e-05,
+          "stddev": 3.2772958996233855e-05,
+          "min": 2.2884000031808682e-05,
+          "max": 0.00010868100002880965
+        },
+        "missing_replies": 0
+      },
+      "1": {
+        "update_interval_s": {
+          "count": 5,
+          "mean": 0.012324960399996598,
+          "stddev": 0.009553834151238607,
+          "min": 0.0004901789999394168,
+          "max": 0.020334230000003117
+        },
+        "motion_update_interval_s": {
+          "count": 3,
+          "mean": 0.02012475066665805,
+          "stddev": 0.0001491884257107455,
+          "min": 0.019998225999984243,
+          "max": 0.020334230000003117
+        },
+        "latency_s": {
+          "count": 6,
+          "mean": 2.7664499990957363e-05,
+          "stddev": 7.492013052231244e-06,
+          "min": 2.0189999986541807e-05,
+          "max": 4.348499999196065e-05
+        },
+        "missing_replies": 0
+      },
+      "2": {
+        "update_interval_s": {
+          "count": 5,
+          "mean": 0.012314238399994792,
+          "stddev": 0.009720707068468169,
+          "min": 0.0003595549999317882,
+          "max": 0.02039115499997024
+        },
+        "motion_update_interval_s": {
+          "count": 3,
+          "mean": 0.020250795000000228,
+          "stddev": 0.00011369523699451662,
+          "min": 0.020112687000050755,
+          "max": 0.02039115499997024
+        },
+        "latency_s": {
+          "count": 6,
+          "mean": 3.972933332837177e-05,
+          "stddev": 2.3795642041923307e-05,
+          "min": 1.9839999936266395e-05,
+          "max": 9.037500001340959e-05
+        },
+        "missing_replies": 0
+      }
+    }
+  },
+  "limits": "matching finite captures cannot establish all protocol behavior or physical units"
+}

@@ -1,0 +1,11 @@
+{
+  "provenance": "User supplied past measurements; not a new hardware experiment",
+  "reported_settings": {"port_label": "port 2 (not an OS device name)", "baud": 4000000, "format": "8N1", "stock_crc_initial": "0x2CBB"},
+  "frames": [
+    {"name":"id0_mode0", "tx":"fe ee 00 00 00 00 00 00 00 00 00 00 00 00 00 44 c3", "rx":"fd ee 00 00 00 07 00 38 24 00 00 1c 00 6c 7f 1e"},
+    {"name":"id1_mode0", "tx":"fe ee 01 00 00 00 00 00 00 00 00 00 00 00 00 e9 c6", "rx":"fd ee 01 00 00 01 00 35 c9 00 00 1c 00 72 49 5f"},
+    {"name":"id2_mode0", "tx":"fe ee 02 00 00 00 00 00 00 00 00 00 00 00 00 1e c8", "rx":"fd ee 02 00 00 0a 00 42 41 00 00 1c 00 79 17 3d"},
+    {"name":"id0_mode1", "tx":"fe ee 10 00 00 12 00 38 24 00 00 80 02 40 00 f9 01", "rx":"fd ee 10 00 00 f8 ff 37 24 00 00 1c 00 6c 4b 5c"},
+    {"name":"id0_changed", "tx":"fe ee 10 00 00 12 00 bc 27 00 00 80 02 40 00 ab 74", "rx":"fd ee 10 13 00 09 00 b5 24 00 00 1c 00 6c d6 f7"}
+  ]
+}

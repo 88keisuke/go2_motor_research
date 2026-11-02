@@ -1,0 +1,8 @@
+gear=6.33
+fe ee 12 00 00 00 00 00 00 00 00 00 00 00 00 ef 72
+fe ee 12 00 03 af ff 5f 14 00 00 80 02 40 00 c6 18
+fe ee 12 e7 ff 04 00 f7 fd ff ff 80 00 0c 00 53 a8
+fe ee 12 00 01 01 ff ff 7f 00 00 00 05 00 05 e9 23
+rx=1,id=2,mode=1,q=1.77788794,dq=-0.1963499933,tau=-1,temp=28,error=5,aux_sdk=3456
+fd ee 12 00 ff f8 ff 38 24 00 00 1c 05 6c 9d 0e
+PASS: official SDK independent TX (4) / RX (1) vectors. No serial I/O.

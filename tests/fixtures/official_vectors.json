@@ -1,0 +1,11 @@
+{
+  "provenance": "scripts/official_vectors.cpp invokes official libUnitreeMotorSDK_Linux64.so at 5b79a42d81cd69adac1367db79efdb972a898fd1 without serial I/O",
+  "axis": "rotor",
+  "commands": [
+    {"values":[0,0,0,0,0],"hex":"fe ee 12 00 00 00 00 00 00 00 00 00 00 00 00 ef 72"},
+    {"values":[1,-2,3,0.5,0.05],"hex":"fe ee 12 00 03 af ff 5f 14 00 00 80 02 40 00 c6 18"},
+    {"values":[-0.1,0.1,-0.1,0.1,0.01],"hex":"fe ee 12 e7 ff 04 00 f7 fd ff ff 80 00 0c 00 53 a8"},
+    {"values":[6.2832,-6.2832,1,1,1],"hex":"fe ee 12 00 01 01 ff ff 7f 00 00 00 05 00 05 e9 23"}
+  ],
+  "feedback": {"hex":"fd ee 12 00 ff f8 ff 38 24 00 00 1c 05 6c 9d 0e", "motor_id":2,"mode":1,"position":1.77788794,"velocity":-0.1963499933,"torque":-1,"temperature":28,"error":5,"auxiliary_bits_3_14":3456}
+}
