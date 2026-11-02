@@ -236,6 +236,17 @@ class ControlTests(unittest.TestCase):
         self.assertFalse(term['acknowledged'])
         self.assertFalse(term['mechanical_stop_proven'])
 
+    def test_coarse_platform_monotonic_clock_does_not_erase_timing(self):
+        # Windows <=3.12 monotonic may have coarse resolution. All scheduling,
+        # deadlines and event timestamps must share the high-resolution clock.
+        with patch('time.monotonic', return_value=0):
+            c=self.controller()
+            c.run({0:0.001,1:0.002},duration=0.004,period=0.002)
+        session=next(e for e in c.bus.log.events if e['event']=='session')
+        self.assertEqual(session['clock'],'perf_counter')
+        cycle=next(e for e in c.bus.log.events if e['event']=='cycle')
+        self.assertGreater(cycle['skew_s'],0)
+
     def test_completion_with_missing_exit_reply_fails(self):
         polls=0
         def respond(frame):

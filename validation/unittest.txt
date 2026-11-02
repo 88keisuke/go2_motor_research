@@ -9,6 +9,7 @@ test_partial_id_mismatch_and_raw_logging (test_driver.BusTests.test_partial_id_m
 test_serial_guard_before_import (test_driver.BusTests.test_serial_guard_before_import) ... ok
 test_timeout_and_no_cross_transaction_partial (test_driver.BusTests.test_timeout_and_no_cross_transaction_partial) ... ok
 test_transport_errors_and_short_write (test_driver.BusTests.test_transport_errors_and_short_write) ... ok
+test_coarse_platform_monotonic_clock_does_not_erase_timing (test_driver.ControlTests.test_coarse_platform_monotonic_clock_does_not_erase_timing) ... ok
 test_completion_with_missing_exit_reply_fails (test_driver.ControlTests.test_completion_with_missing_exit_reply_fails) ... ok
 test_faults_abort_and_attempt_exit_for_all_ids (test_driver.ControlTests.test_faults_abort_and_attempt_exit_for_all_ids) ... ok
 test_missing_exit_reply_never_claims_stop (test_driver.ControlTests.test_missing_exit_reply_never_claims_stop) ... ok
@@ -23,6 +24,6 @@ test_reject_unsafe_values_and_modes (test_driver.ProtocolTests.test_reject_unsaf
 test_units_and_angle_inverse (test_driver.ProtocolTests.test_units_and_angle_inverse) ... ok
 
 ----------------------------------------------------------------------
-Ran 23 tests in 0.111s
+Ran 24 tests in 0.111s
 
 OK

@@ -13,7 +13,7 @@ class EventLog:
         self.events = []
 
     def emit(self, event, **fields):
-        record = {"schema": 1, "event": event, "monotonic": time.monotonic(),
+        record = {"schema": 1, "event": event, "monotonic": time.perf_counter(),
                   "utc": datetime.now(timezone.utc).isoformat(), **fields}
         # Live runs stream to disk. In-memory collection is only for virtual tests.
         if self.file:

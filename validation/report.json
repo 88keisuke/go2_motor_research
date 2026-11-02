@@ -1,6 +1,6 @@
 {
   "hardware_io_performed": false,
-  "tests_run": 23,
+  "tests_run": 24,
   "test_failures": 0,
   "test_errors": 0,
   "stock_crc": {
@@ -295,7 +295,7 @@
               "profile_evidence": "CRC matches supplied captures; field meanings/scales are hypotheses",
               "gains": "SDK rotor convention; stock gain response unverified"
             },
-            "timestamp": 977.753946083
+            "timestamp": 1160.330601949
           },
           "mechanical_stop_proven": false
         },
@@ -340,7 +340,7 @@
               "profile_evidence": "CRC matches supplied captures; field meanings/scales are hypotheses",
               "gains": "SDK rotor convention; stock gain response unverified"
             },
-            "timestamp": 977.754073573
+            "timestamp": 1160.330702208
           },
           "mechanical_stop_proven": false
         },
@@ -385,7 +385,7 @@
               "profile_evidence": "CRC matches supplied captures; field meanings/scales are hypotheses",
               "gains": "SDK rotor convention; stock gain response unverified"
             },
-            "timestamp": 977.75418595
+            "timestamp": 1160.330798982
           },
           "mechanical_stop_proven": false
         }
@@ -396,72 +396,72 @@
       "0": {
         "update_interval_s": {
           "count": 5,
-          "mean": 0.012321835599982478,
-          "stddev": 0.009530098962633984,
-          "min": 0.00048392899998361827,
-          "max": 0.020205017999956
+          "mean": 0.012232019000020956,
+          "stddev": 0.009622665899006344,
+          "min": 0.00040299900001627975,
+          "max": 0.020381425000095987
         },
         "motion_update_interval_s": {
           "count": 3,
-          "mean": 0.020102497666660685,
-          "stddev": 7.734012799621285e-05,
-          "min": 0.020018230999994557,
-          "max": 0.020205017999956
+          "mean": 0.020087757333309735,
+          "stddev": 0.00020791402141397927,
+          "min": 0.01992820199984635,
+          "max": 0.020381425000095987
         },
         "latency_s": {
           "count": 6,
-          "mean": 5.788249999720089e-05,
-          "stddev": 3.2772958996233855e-05,
-          "min": 2.2884000031808682e-05,
-          "max": 0.00010868100002880965
+          "mean": 5.385483336795005e-05,
+          "stddev": 2.4742880179997898e-05,
+          "min": 2.1512000103030005e-05,
+          "max": 8.078999985627888e-05
         },
         "missing_replies": 0
       },
       "1": {
         "update_interval_s": {
           "count": 5,
-          "mean": 0.012324960399996598,
-          "stddev": 0.009553834151238607,
-          "min": 0.0004901789999394168,
-          "max": 0.020334230000003117
+          "mean": 0.012228656000024785,
+          "stddev": 0.009671626351026825,
+          "min": 0.0003707109999595559,
+          "max": 0.02044031199989149
         },
         "motion_update_interval_s": {
           "count": 3,
-          "mean": 0.02012475066665805,
-          "stddev": 0.0001491884257107455,
-          "min": 0.019998225999984243,
-          "max": 0.020334230000003117
+          "mean": 0.02012422466668795,
+          "stddev": 0.00022458943393175202,
+          "min": 0.019939214000032734,
+          "max": 0.02044031199989149
         },
         "latency_s": {
           "count": 6,
-          "mean": 2.7664499990957363e-05,
-          "stddev": 7.492013052231244e-06,
-          "min": 2.0189999986541807e-05,
-          "max": 4.348499999196065e-05
+          "mean": 3.425916664430891e-05,
+          "stddev": 2.6231548392726666e-05,
+          "min": 1.9458999986454728e-05,
+          "max": 9.26679999793123e-05
         },
         "missing_replies": 0
       },
       "2": {
         "update_interval_s": {
           "count": 5,
-          "mean": 0.012314238399994792,
-          "stddev": 0.009720707068468169,
-          "min": 0.0003595549999317882,
-          "max": 0.02039115499997024
+          "mean": 0.012229489199989984,
+          "stddev": 0.009684296940212096,
+          "min": 0.0003002270000251883,
+          "max": 0.02043332200014447
         },
         "motion_update_interval_s": {
           "count": 3,
-          "mean": 0.020250795000000228,
-          "stddev": 0.00011369523699451662,
-          "min": 0.020112687000050755,
-          "max": 0.02039115499997024
+          "mean": 0.020135461333363008,
+          "stddev": 0.0002122777454740703,
+          "min": 0.019954095999992205,
+          "max": 0.02043332200014447
         },
         "latency_s": {
           "count": 6,
-          "mean": 3.972933332837177e-05,
-          "stddev": 2.3795642041923307e-05,
-          "min": 1.9839999936266395e-05,
-          "max": 9.037500001340959e-05
+          "mean": 2.1401666723856277e-05,
+          "stddev": 1.88921795909974e-06,
+          "min": 1.8778000139718642e-05,
+          "max": 2.486700009285414e-05
         },
         "missing_replies": 0
       }

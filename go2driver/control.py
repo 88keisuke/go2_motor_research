@@ -141,13 +141,13 @@ class MotorController:
                                                    targets[motor_id] if kind == "velocity" else 0,
                                                    targets[motor_id] if kind == "torque" else 0,
                                                    0, kd if kind == "velocity" else 0))
-            began, cycle = time.monotonic(), 0
+            began, cycle = time.perf_counter(), 0
             while True:
-                cycle_start = time.monotonic()
+                cycle_start = time.perf_counter()
                 final_cycle = cycle_start-began >= duration
                 offsets = {}
                 for motor_id in ids:
-                    sampled = time.monotonic()
+                    sampled = time.perf_counter()
                     elapsed = sampled-began
                     if kind == "position":
                         blend, derivative = smoothstep(elapsed/duration)
@@ -167,7 +167,7 @@ class MotorController:
                     self.bus.log.emit("tracking", motor_id=motor_id, expected=command.position,
                                       actual=state.position, error_rad=state.position-command.position,
                                       elapsed_s=elapsed, kind=kind)
-                ended = time.monotonic()
+                ended = time.perf_counter()
                 self.bus.log.emit("cycle", cycle=cycle, per_id_send_offset_s=offsets,
                                   skew_s=max(offsets.values())-min(offsets.values()),
                                   duration_s=ended-cycle_start, requested_period_s=period,
@@ -179,7 +179,7 @@ class MotorController:
                 if next_deadline < ended:
                     cycle = math.floor((ended-began)/period)+1  # never burst to catch up
                     next_deadline = began+cycle*period
-                time.sleep(max(0, next_deadline-time.monotonic()))
+                time.sleep(max(0, next_deadline-time.perf_counter()))
         except BaseException as exc:
             self.bus.log.emit("abort", reason=str(exc), exception=type(exc).__name__)
             outcomes = self.terminate(ids, str(exc))

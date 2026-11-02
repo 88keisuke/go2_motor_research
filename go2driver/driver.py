@@ -26,6 +26,7 @@ class MotorBus:
         self.last_transaction = None
         self.log.emit("session", profile=profile.name, units={str(k): asdict(v) for k,v in self.units.items()},
                       timeout_s=timeout, max_consecutive_crc=max_consecutive_crc,
+                      clock="perf_counter", clock_resolution_s=time.get_clock_info("perf_counter").resolution,
                       evidence=profile.evidence)
 
     def exchange(self, command: Command):
@@ -36,18 +37,18 @@ class MotorBus:
         with self.lock:
             self.stream.reset()
             self.stream.consecutive_crc_errors = 0
-            started = time.monotonic()
+            started = time.perf_counter()
             self.log.emit("tx", motor_id=command.motor_id, hex=frame.hex(" "),
                           command=asdict(command), raw=asdict(raw_command), sent_at=started)
             try:
                 self.transport.discard_input()
                 if self.transport.write(frame) != len(frame):
                     raise OSError("short serial write")
-                while time.monotonic() - started < self.timeout:
+                while time.perf_counter() - started < self.timeout:
                     chunk = self.transport.read(256)
                     if not chunk:
                         continue
-                    received = time.monotonic()
+                    received = time.perf_counter()
                     self.log.emit("rx_chunk", hex=chunk.hex(" "), received_at=received)
                     if received-started > self.timeout:
                         raise BusTimeout("reply arrived after deadline")
