@@ -1,8 +1,20 @@
-# Go2 Motor ID Research
+# Go2 Motor Research / Python Driver
 
 Unitree Go2に標準搭載される純正モーターについて、**元のファームウェアを維持したままIDを変更する処理と条件を特定する**研究リポジトリです。
 
-現在は資料取得・静的解析・オフライン検証の段階です。実機への送信、ID書き換え、ブートローダーへの移行、ファームウェア書き込みは行いません。以下の検証手順はシリアルポートを開きません。
+現在は資料取得・静的解析・Pythonドライバー実装・オフライン検証の段階です。今回、実機への送信は行っていません。ID書き換え、ブートローダー移行、ファームウェア書き込みは新しいドライバーの対象外です。以下の検証手順はシリアルポートを開きません。
+
+## Go2 Air純正モーター用Pythonドライバー
+
+[導入・CLI・校正手順（Windows中心）](docs/python-driver.md) / [公式根拠・変換式・未検証事項](docs/protocol-evidence.md)。状態取得、単体/複数台の位置軌道、速度・トルク指令、raw/換算値、JSONL保存・再解析、校正を実装しました。既定はdry-runで、明示的な `--send` がなければデバイスを開きません。
+
+```sh
+python -m unittest discover -s tests -v
+python -m go2driver status --ids 0 1 2 --dry-run
+python -m go2driver replay validation/supplied-captures.jsonl
+```
+
+純正側のCRCは提示TX/RX各5フレームに一致しています。物理単位・減速比6.33・ゲイン・モード0の機械的挙動は実機未検証です。実機制御は使用環境で終了指令を確認した根拠の設定が必要です。検証記録は `validation/`、提示フレームと公式SDKの独立ベクトルは `tests/fixtures/` にあります。
 
 ## 最初に読む資料
 

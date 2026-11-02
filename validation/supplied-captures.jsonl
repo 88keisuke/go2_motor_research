@@ -1,0 +1,10 @@
+{"schema": 1, "event": "tx", "hex": "fe ee 00 00 00 00 00 00 00 00 00 00 00 00 00 44 c3", "source": "user-supplied past capture; timestamp unavailable", "fixture": "id0_mode0"}
+{"schema": 1, "event": "rx", "hex": "fd ee 00 00 00 07 00 38 24 00 00 1c 00 6c 7f 1e", "source": "user-supplied past capture; timestamp unavailable", "fixture": "id0_mode0"}
+{"schema": 1, "event": "tx", "hex": "fe ee 01 00 00 00 00 00 00 00 00 00 00 00 00 e9 c6", "source": "user-supplied past capture; timestamp unavailable", "fixture": "id1_mode0"}
+{"schema": 1, "event": "rx", "hex": "fd ee 01 00 00 01 00 35 c9 00 00 1c 00 72 49 5f", "source": "user-supplied past capture; timestamp unavailable", "fixture": "id1_mode0"}
+{"schema": 1, "event": "tx", "hex": "fe ee 02 00 00 00 00 00 00 00 00 00 00 00 00 1e c8", "source": "user-supplied past capture; timestamp unavailable", "fixture": "id2_mode0"}
+{"schema": 1, "event": "rx", "hex": "fd ee 02 00 00 0a 00 42 41 00 00 1c 00 79 17 3d", "source": "user-supplied past capture; timestamp unavailable", "fixture": "id2_mode0"}
+{"schema": 1, "event": "tx", "hex": "fe ee 10 00 00 12 00 38 24 00 00 80 02 40 00 f9 01", "source": "user-supplied past capture; timestamp unavailable", "fixture": "id0_mode1"}
+{"schema": 1, "event": "rx", "hex": "fd ee 10 00 00 f8 ff 37 24 00 00 1c 00 6c 4b 5c", "source": "user-supplied past capture; timestamp unavailable", "fixture": "id0_mode1"}
+{"schema": 1, "event": "tx", "hex": "fe ee 10 00 00 12 00 bc 27 00 00 80 02 40 00 ab 74", "source": "user-supplied past capture; timestamp unavailable", "fixture": "id0_changed"}
+{"schema": 1, "event": "rx", "hex": "fd ee 10 13 00 09 00 b5 24 00 00 1c 00 6c d6 f7", "source": "user-supplied past capture; timestamp unavailable", "fixture": "id0_changed"}

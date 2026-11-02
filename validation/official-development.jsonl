@@ -1,0 +1,5 @@
+{"schema": 1, "event": "tx", "hex": "fe ee 12 00 00 00 00 00 00 00 00 00 00 00 00 ef 72", "source": "official SDK synthetic input; no hardware"}
+{"schema": 1, "event": "tx", "hex": "fe ee 12 00 03 af ff 5f 14 00 00 80 02 40 00 c6 18", "source": "official SDK synthetic input; no hardware"}
+{"schema": 1, "event": "tx", "hex": "fe ee 12 e7 ff 04 00 f7 fd ff ff 80 00 0c 00 53 a8", "source": "official SDK synthetic input; no hardware"}
+{"schema": 1, "event": "tx", "hex": "fe ee 12 00 01 01 ff ff 7f 00 00 00 05 00 05 e9 23", "source": "official SDK synthetic input; no hardware"}
+{"schema": 1, "event": "rx", "hex": "fd ee 12 00 ff f8 ff 38 24 00 00 1c 05 6c 9d 0e", "source": "independent synthetic RX decoder vector; not a transaction reply"}

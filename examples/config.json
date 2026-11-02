@@ -1,0 +1,25 @@
+{
+  "units": {
+    "axis": "output",
+    "direction": 1,
+    "zero_raw": 0,
+    "gear_ratio": 6.33,
+    "gear_ratio_verified": false
+  },
+  "limits": {
+    "position_min": -1.5,
+    "position_max": 1.5,
+    "velocity_max": 0.5,
+    "torque_max": 0.3,
+    "kp_max": 1.0,
+    "kd_max": 0.1,
+    "temperature_max": 55,
+    "following_error_max": 0.1
+  },
+  "motors": {
+    "0": {"units": {"direction": 1}},
+    "1": {"units": {"direction": 1}},
+    "2": {"units": {"direction": 1}}
+  },
+  "termination": {"mode": 0, "verified": false, "evidence": ""}
+}

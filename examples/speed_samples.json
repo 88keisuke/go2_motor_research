@@ -1,0 +1,5 @@
+[
+  {"time_s": 0.0, "raw": 1000, "speed_raw": 26},
+  {"time_s": 0.05, "raw": 1050, "speed_raw": 26},
+  {"time_s": 0.1, "raw": 1100, "speed_raw": 26}
+]

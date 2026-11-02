@@ -1,0 +1,29 @@
+test_calibration_residual_repeatability_and_speed (test_driver.AnalysisTests.test_calibration_residual_repeatability_and_speed) ... ok
+test_default_cli_never_constructs_serial (test_driver.AnalysisTests.test_default_cli_never_constructs_serial) ... ok
+test_jsonl_replay_preserves_raw_chunks_and_config (test_driver.AnalysisTests.test_jsonl_replay_preserves_raw_chunks_and_config) ... ok
+test_malformed_log_records_report_errors_and_continue (test_driver.AnalysisTests.test_malformed_log_records_report_errors_and_continue) ... ok
+test_authorized_serial_settings_with_mock_only (test_driver.BusTests.test_authorized_serial_settings_with_mock_only) ... ok
+test_crc_nonconsecutive_and_resynchronization (test_driver.BusTests.test_crc_nonconsecutive_and_resynchronization) ... ok
+test_crc_threshold_and_mode_mismatch (test_driver.BusTests.test_crc_threshold_and_mode_mismatch) ... ok
+test_partial_id_mismatch_and_raw_logging (test_driver.BusTests.test_partial_id_mismatch_and_raw_logging) ... ok
+test_serial_guard_before_import (test_driver.BusTests.test_serial_guard_before_import) ... ok
+test_timeout_and_no_cross_transaction_partial (test_driver.BusTests.test_timeout_and_no_cross_transaction_partial) ... ok
+test_transport_errors_and_short_write (test_driver.BusTests.test_transport_errors_and_short_write) ... ok
+test_coarse_platform_monotonic_clock_does_not_erase_timing (test_driver.ControlTests.test_coarse_platform_monotonic_clock_does_not_erase_timing) ... ok
+test_completion_with_missing_exit_reply_fails (test_driver.ControlTests.test_completion_with_missing_exit_reply_fails) ... ok
+test_faults_abort_and_attempt_exit_for_all_ids (test_driver.ControlTests.test_faults_abort_and_attempt_exit_for_all_ids) ... ok
+test_missing_exit_reply_never_claims_stop (test_driver.ControlTests.test_missing_exit_reply_never_claims_stop) ... ok
+test_single_multi_position_velocity_torque_and_termination (test_driver.ControlTests.test_single_multi_position_velocity_torque_and_termination) ... ok
+test_start_at_current_angle_and_peak_speed_rejection (test_driver.ControlTests.test_start_at_current_angle_and_peak_speed_rejection) ... ok
+test_unverified_termination_and_invalid_targets_no_io (test_driver.ControlTests.test_unverified_termination_and_invalid_targets_no_io) ... ok
+test_all_capture_crc_and_single_bit_corruption (test_driver.ProtocolTests.test_all_capture_crc_and_single_bit_corruption) ... ok
+test_capture_fields (test_driver.ProtocolTests.test_capture_fields) ... ok
+test_independent_official_sdk_vectors (test_driver.ProtocolTests.test_independent_official_sdk_vectors) ... ok
+test_partial_concatenated_noise_and_recovery (test_driver.ProtocolTests.test_partial_concatenated_noise_and_recovery) ... ok
+test_reject_unsafe_values_and_modes (test_driver.ProtocolTests.test_reject_unsafe_values_and_modes) ... ok
+test_units_and_angle_inverse (test_driver.ProtocolTests.test_units_and_angle_inverse) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.111s
+
+OK
